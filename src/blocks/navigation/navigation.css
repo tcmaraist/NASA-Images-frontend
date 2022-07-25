@@ -1,0 +1,21 @@
+.navigation {
+  margin: 0 auto;
+  padding: 36px 19px 0;
+  max-width: 320px;
+
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 550px) {
+  .navigation {
+    padding: 46.25px 0 0;
+
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .navigation {
+    max-width: 880px;
+  }
+}

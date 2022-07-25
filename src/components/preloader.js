@@ -1,7 +1,5 @@
 import React from "react";
 
-function Preloader() {
-    return ();
+export default function Preloader() {
+  return <i className="circle-preloader"></i>;
 }
-
-export default Preloader;
