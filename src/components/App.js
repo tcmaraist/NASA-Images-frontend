@@ -3,8 +3,9 @@ import React from "react";
 import Header from "./Header";
 
 import Main from "./Main";
-import Search from "./Search";
+import Details from "./Details";
 import Footer from "./Footer";
+import image from "../images/card-default.jpeg";
 
 import SearchForm from "./SearchForm";
 
@@ -16,11 +17,9 @@ function App() {
       {/*<Preloader></Preloader> */}
 
       <Header></Header>
-      {/* <Navigation></Navigation> */}
-
       <SearchForm></SearchForm>
       <Routes>
-        <Route path="/Search" element={<Search />} />
+        <Route path="/Search" element={<Details img={image} />} />
         <Route path="/" element={<Main />} />
       </Routes>
 

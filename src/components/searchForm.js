@@ -22,17 +22,3 @@ export default function SearchForm({}) {
     </div>
   );
 }
-
-/*
-    
-
-
-    <AsyncPaginate
-      className="searchform"
-      placeholder="What are you looking for?"
-      debouceTimeout={600}
-      value={search}
-      onChange={handleOnChange}
-      loadOptions={loadOptions}
-    />
-    */

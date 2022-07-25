@@ -1,0 +1,14 @@
+.details__info {
+  color: #fff;
+  overflow: ellipses;
+  background-color: #15418c;
+}
+
+@media screen and (min-width: 550px) {
+  .details__info {
+  }
+}
+@media screen and (min-width: 920px) {
+  .details__info {
+  }
+}

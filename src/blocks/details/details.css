@@ -1,22 +1,21 @@
-.searchform {
-  margin: 0 auto;
-  padding: 36px 19px 0;
+.details {
+  margin: 60px auto;
+
   max-width: 320px;
+  background-color: orangered;
   display: flex;
-  position: relative;
-  box-sizing: border-box;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 550px) {
-  .searchform {
-    padding: 46.25px 0 0;
-
+  .details {
     max-width: 500px;
   }
 }
 
 @media screen and (min-width: 920px) {
-  .searchform {
+  .details {
     max-width: 880px;
+    gap: 20px;
   }
 }

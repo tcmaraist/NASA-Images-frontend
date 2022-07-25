@@ -1,0 +1,13 @@
+.details__title {
+  color: #fff;
+  background-color: #cfcfcf;
+}
+
+@media screen and (min-width: 550px) {
+  .details {
+  }
+}
+@media screen and (min-width: 920px) {
+  .details {
+  }
+}
