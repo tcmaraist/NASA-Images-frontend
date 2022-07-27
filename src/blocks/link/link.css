@@ -1,9 +1,9 @@
-.notfound__link {
+.link {
   color: orangered;
   text-decoration: none;
   text-align: center;
 }
 
-.notfound__link:hover {
+.link:hover {
   opacity: 0.6;
 }

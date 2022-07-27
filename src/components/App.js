@@ -16,8 +16,8 @@ function App() {
   return (
     <div className="page">
       <Routes>
-        <Route path="/notfound" element={<NotFound />} />
         <Route path="/*" element={<Main />} />
+        <Route path="/notfound" element={<NotFound />} />
       </Routes>
     </div>
   );

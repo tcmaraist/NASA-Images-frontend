@@ -31,5 +31,7 @@
 @import url(./blocks/notfound/__body/notfound__body.css);
 @import url(./blocks/notfound/__link/notfound__link.css);
 
+@import url(./blocks/link/link.css);
+
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);

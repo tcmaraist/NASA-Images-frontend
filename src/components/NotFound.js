@@ -10,7 +10,7 @@ export default function NotFound() {
         The site configured at this address does not contain the requested file.
       </p>
       <nav>
-        <Link to="/" className="notfound__link">
+        <Link to="/" className="link">
           Home
         </Link>
       </nav>

@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../images/card-default.jpeg";
-
+import { Link } from "react-router-dom";
 export default function Details(props) {
   return (
     <article className="details">
@@ -12,6 +12,11 @@ export default function Details(props) {
         consectetur illum. Ad, iste debitis sit asperiores blanditiis nesciunt
         vitae nihil!
       </p>
+      <nav>
+        <Link to="/" className="details__info link">
+          Home
+        </Link>
+      </nav>
     </article>
   );
 }
