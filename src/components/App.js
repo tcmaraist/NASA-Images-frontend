@@ -1,5 +1,6 @@
 import React from "react";
-
+import Preloader from "./Preloader";
+import NotFound from "./NotFound";
 import Header from "./Header";
 
 import Main from "./Main";
@@ -14,16 +15,10 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="page">
-      {/*<Preloader></Preloader> */}
-
-      <Header></Header>
-      <SearchForm></SearchForm>
       <Routes>
-        <Route path="/Search" element={<Details img={image} />} />
-        <Route path="/" element={<Main />} />
+        <Route path="/notfound" element={<NotFound />} />
+        <Route path="/*" element={<Main />} />
       </Routes>
-
-      <Footer></Footer>
     </div>
   );
 }

@@ -1,7 +1,8 @@
 .details__info {
+  padding: 20px;
   color: #fff;
   overflow: ellipses;
-  background-color: #15418c;
+  color: #443f3c;
 }
 
 @media screen and (min-width: 550px) {

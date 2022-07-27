@@ -8,8 +8,6 @@
 
 @import url(./blocks/main/main.css);
 
-@import url(./blocks/navigation/navigation.css);
-
 @import url(./blocks/searchform/searchform.css);
 @import url(./blocks/searchform/__label/searchform__label.css);
 @import url(./blocks/searchform/__input/searchform__input.css);
@@ -27,6 +25,11 @@
 @import url(./blocks/details/__image/details__info.css);
 @import url(./blocks/details/__info/details__info.css);
 @import url(./blocks/details/__title/details__title.css);
+
+@import url(./blocks/notfound/notfound.css);
+@import url(./blocks/notfound/__title/notfound__title.css);
+@import url(./blocks/notfound/__body/notfound__body.css);
+@import url(./blocks/notfound/__link/notfound__link.css);
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__copyright/footer__copyright.css);

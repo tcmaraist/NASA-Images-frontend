@@ -1,6 +1,7 @@
 .details__title {
-  color: #fff;
-  background-color: #cfcfcf;
+  padding: 20px 20px 0px;
+
+  color: #443f3c;
 }
 
 @media screen and (min-width: 550px) {
