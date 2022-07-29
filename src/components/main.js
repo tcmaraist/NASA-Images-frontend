@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import SearchForm from "./SearchForm";
 import { Route, Routes } from "react-router-dom";
-import NotFound from "./NotFound";
+
 import image from "../images/card-default.jpeg";
 import Details from "./Details";
 import Cards from "./Cards";
