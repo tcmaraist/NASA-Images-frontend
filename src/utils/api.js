@@ -9,14 +9,16 @@ class Api {
   }
 
   getInitialCards() {
-    return fetch(`${this._baseUrl}/asset/?orderby=popular`);
+    return fetch(`${this._baseUrl}/asset/?orderby=popular`, {
+      headers: this._headers,
+    }).then(this._handleServerResponse);
   }
 }
 
 const api = new Api({
   baseUrl: "https://images-api.nasa.gov",
   headers: {
-    Authorizaion: "KNwVoypkMlR1eO8crEcvjgcm2fOaCoejuwIyKQ8b",
+    Authorization: "KNwVoypkMlR1eO8crEcvjgcm2fOaCoejuwIyKQ8b",
     "Content-Type": "application/json",
   },
 });

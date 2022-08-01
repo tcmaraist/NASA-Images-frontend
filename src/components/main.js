@@ -1,11 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import SearchForm from "./SearchForm";
-import { Route, Routes } from "react-router-dom";
-
-import image from "../images/card-default.jpeg";
-import Details from "./Details";
-import Cards from "./Cards";
+import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 
 export default function Main(props) {
@@ -13,10 +9,7 @@ export default function Main(props) {
     <div className="page">
       <Header></Header>
       <SearchForm></SearchForm>
-      <Routes>
-        <Route path="/details" element={<Details img={image} />} />
-        <Route path="/" element={<Cards img={image} />} />
-      </Routes>
+      <Outlet />
       <Footer></Footer>
     </div>
   );
