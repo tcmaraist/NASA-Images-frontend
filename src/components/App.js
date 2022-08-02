@@ -16,7 +16,7 @@ function App() {
     api
       .getInitialCards()
       .then((res) => console.log(res))
-      .then(([cardData]) => {
+      .then(({ collection: { items: cardData } }) => {
         setCards(cardData);
       })
       .catch((err) => console.error(err));
