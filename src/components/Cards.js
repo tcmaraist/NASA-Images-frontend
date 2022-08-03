@@ -5,8 +5,8 @@ export default function Cards({ cards }) {
   return (
     <section>
       <ul className="cards">
-        {cards.map((card) => (
-          <Card key={card._id} card={card} />
+        {cards.map((card, i) => (
+          <Card key={i} card={card} />
         ))}
       </ul>
     </section>

@@ -19,6 +19,7 @@ const api = new Api({
   baseUrl: "https://images-api.nasa.gov",
   headers: {
     Authorization: "KNwVoypkMlR1eO8crEcvjgcm2fOaCoejuwIyKQ8b",
+    "X-Content-Type-Options": "nosniff",
     "Content-Type": "application/json",
   },
 });

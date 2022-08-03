@@ -15,7 +15,6 @@ function App() {
   React.useEffect(() => {
     api
       .getInitialCards()
-      .then((res) => console.log(res))
       .then(({ collection: { items: cardData } }) => {
         setCards(cardData);
       })
