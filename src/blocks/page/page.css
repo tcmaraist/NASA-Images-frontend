@@ -8,8 +8,8 @@
   height: 1000px;
   text-rendering: optimizeLegibility;
   font-family: "Roboto", Arial !important;
-  background-color: #000000;
-  background-image: url("../../images/milky-way.jpeg");
+  background-color: white;
+  /* background-image: url("../../images/milky-way.jpeg"); */
   background-repeat: no-repeat;
   background-size: cover;
   color: #cfcfcf;

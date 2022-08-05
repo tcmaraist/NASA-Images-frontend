@@ -6,7 +6,7 @@ export default function Cards({ cards }) {
     <section>
       <ul className="cards">
         {cards.map((card, i) => (
-          <Card key={i} card={card} />
+          <Card key={card.data[0].nasa_id} card={card} />
         ))}
       </ul>
     </section>
