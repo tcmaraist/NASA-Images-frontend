@@ -6,11 +6,13 @@ import Main from "./Main";
 import Cards from "./Cards";
 import Details from "./Details";
 import image from "../images/card-default.jpeg";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import api from "../utils/api";
 
 function App() {
   const [cards, setCards] = React.useState([]);
+  const [count, setCount] = React.useState(0);
+  const history = useNavigate();
 
   React.useEffect(() => {
     api
@@ -20,6 +22,10 @@ function App() {
       })
       .catch((err) => console.error(err));
   });
+
+  function handleCardClick(card) {
+    setGoToPage(card);
+  }
   return (
     <div className="page">
       <Routes>
