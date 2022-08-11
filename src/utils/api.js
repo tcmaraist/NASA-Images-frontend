@@ -13,6 +13,12 @@ class Api {
       headers: this._headers,
     }).then(this._handleServerResponse);
   }
+
+  getAlbum(album_name) {
+    return fetch(`${this._baseURl}/album/${album_name}`, {
+      headers: this._headers,
+    }).then(this._handleServerResponse);
+  }
 }
 
 const api = new Api({
