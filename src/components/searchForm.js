@@ -1,16 +1,6 @@
-import React, { useState } from "react";
 import search from "../images/search.svg";
 
-export default function SearchForm({ details, query }) {
-  const [searchField, setSearchField] = useState("");
-  /*
-  const filterdCards = details.filter((card) => {
-    return card.name.toLowerCase().includes(searchField.toLowerCase());
-  });
-*/
-  const handleChange = (e) => {
-    setSearchField(e.target.value);
-  };
+export default function SearchForm({ query, handleChange }) {
   return (
     <div className="searchform">
       <input

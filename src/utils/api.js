@@ -14,8 +14,14 @@ class Api {
     }).then(this._handleServerResponse);
   }
 
-  getAlbum(album_name) {
-    return fetch(`${this._baseURl}/album/${album_name}`, {
+  search(q) {
+    return fetch(`${this._baseURl}/search?q=${q}`, {
+      headers: this._headers,
+    }).then(this._handleServerResponse);
+  }
+
+  getDetails(nasa_id) {
+    return fetch(`${this._baseURl}/asset/${nasa_id}`, {
       headers: this._headers,
     }).then(this._handleServerResponse);
   }

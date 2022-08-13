@@ -7,7 +7,7 @@ export default function Header() {
     <header className="header">
       <div className="header__title">IMAGES FROM NASA</div>
       <nav>
-        <Link to="/" className=" link">
+        <Link to="/">
           <img className="header__logo" src={logo} alt="NASA logo"></img>
         </Link>
       </nav>
