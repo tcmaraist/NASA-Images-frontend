@@ -15,13 +15,13 @@ class Api {
   }
 
   search(q) {
-    return fetch(`${this._baseURl}/search?q=${q}`, {
+    return fetch(`${this._baseUrl}/search?q=${q}`, {
       headers: this._headers,
     }).then(this._handleServerResponse);
   }
 
   getDetails(nasa_id) {
-    return fetch(`${this._baseURl}/asset/${nasa_id}`, {
+    return fetch(`${this._baseUrl}/asset/${nasa_id}`, {
       headers: this._headers,
     }).then(this._handleServerResponse);
   }
