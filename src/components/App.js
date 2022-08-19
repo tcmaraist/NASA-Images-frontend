@@ -25,7 +25,7 @@ function App() {
         setCards(cardData);
       })
       .catch((err) => console.error(err));
-  });
+  }, []);
 
   function search(cards) {
     return cards.filter((card) => {
