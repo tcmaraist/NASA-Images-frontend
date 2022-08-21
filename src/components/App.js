@@ -6,14 +6,13 @@ import Main from "./Main";
 import Cards from "./Cards";
 import Details from "./Details";
 import image from "../images/card-default.jpeg";
-import { Route, Routes, useSearchParams, useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import api from "../utils/api";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [cards, setCards] = useState([]);
-  const [query, setQuery] = useState("");
-  const [searchParam] = useState(["jupiter"]);
+  const [search, setSearch] = useState("");
 
   const navigate = useNavigate();
 
@@ -27,19 +26,16 @@ function App() {
       .catch((err) => console.error(err));
   }, []);
 
-  function search(cards) {
-    return cards.filter((card) => {
-      return searchParam.some((newCard) => {
-        return (
-          newCard.toString().toLowerCase().indexOf(query.toLowerCase()) > -1
-        );
-      });
-    });
-  }
-
   function handleSearchChange(e) {
     console.log(e);
-    setQuery(e.target.value);
+    setSearch(e.target.value);
+  }
+
+  function handleSearchBtnClick() {
+    api.search(search).then(({ collection: { items: searchData } }) => {
+      setIsLoaded(true);
+      setCards(searchData);
+    });
   }
 
   function handleImageClick(card) {
@@ -53,7 +49,11 @@ function App() {
         <Route
           path="/"
           element={
-            <Main query={query} handleSearchChange={handleSearchChange} />
+            <Main
+              search={search}
+              handleSearchChange={handleSearchChange}
+              handleSearchBtnClick={handleSearchBtnClick}
+            />
           }
         >
           <Route path="/:nasa_id" element={<Details img={image} />} />
@@ -75,3 +75,16 @@ function App() {
 }
 
 export default App;
+
+/* 
+on search button submit 'cards' should be set to search results.
+
+on card click user should be redirected to a page with information that is dynamically rendered with information form the card.
+
+fix searchform__input sizing
+
+figure out how to get image data
+
+
+
+*/

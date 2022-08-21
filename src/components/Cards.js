@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "./Card";
 
-export default function Cards({ cards, search, handleImageClick }) {
+export default function Cards({ cards, handleImageClick }) {
   return (
     <section>
       <ul className="cards">
-        {search(cards).map((card) => (
+        {cards.map((card) => (
           <Card
             key={card.data[0].nasa_id}
             card={card}

@@ -14,8 +14,8 @@ class Api {
     }).then(this._handleServerResponse);
   }
 
-  search(q) {
-    return fetch(`${this._baseUrl}/search?q=${q}`, {
+  search(search) {
+    return fetch(`${this._baseUrl}/search?media_type=image&q=${search}`, {
       headers: this._headers,
     }).then(this._handleServerResponse);
   }
