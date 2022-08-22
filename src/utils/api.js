@@ -20,8 +20,14 @@ class Api {
     }).then(this._handleServerResponse);
   }
 
-  getDetails(nasa_id) {
+  getImage(nasa_id) {
     return fetch(`${this._baseUrl}/asset/${nasa_id}`, {
+      headers: this._headers,
+    }).then(this._handleServerResponse);
+  }
+
+  getDetails(nasa_id) {
+    return fetch(`${this._baseUrl}/metadata/${nasa_id}`, {
       headers: this._headers,
     }).then(this._handleServerResponse);
   }
