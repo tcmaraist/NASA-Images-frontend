@@ -27,14 +27,15 @@ function App() {
   }, []);
 
   function handleSearchChange(e) {
-    console.log(e);
     setSearch(e.target.value);
   }
 
-  function handleSearchBtnClick() {
+  function handleSearchSubmit(e) {
+    e.preventDefault();
     api.search(search).then(({ collection: { items: searchData } }) => {
       setIsLoaded(true);
       setCards(searchData);
+      console.log();
     });
   }
 
@@ -52,11 +53,15 @@ function App() {
             <Main
               search={search}
               handleSearchChange={handleSearchChange}
-              handleSearchBtnClick={handleSearchBtnClick}
+              handleSearchSubmit={handleSearchSubmit}
+              isLoaded={isLoaded}
             />
           }
         >
-          <Route path="/:nasa_id" element={<Details img={image} />} />
+          <Route
+            path="/:nasa_id"
+            element={<Details img={image} isLoaded={isLoaded} />}
+          />
           <Route
             path="/"
             element={
@@ -81,9 +86,9 @@ on search button submit 'cards' should be set to search results.
 
 on card click user should be redirected to a page with information that is dynamically rendered with information form the card.
 
-fix searchform__input sizing
+fix preloader constant loading
 
-figure out how to get image data
+figure out how to get image data --> image data will come from metadata. look specifically at AVAIL
 
 
 

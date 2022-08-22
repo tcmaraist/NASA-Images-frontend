@@ -9,9 +9,9 @@
 @import url(./blocks/main/main.css);
 
 @import url(./blocks/searchform/searchform.css);
-@import url(./blocks/searchform/__label/searchform__label.css);
+
 @import url(./blocks/searchform/__input/searchform__input.css);
-@import url(./blocks/searchform/__symbol/searchform__symbol.css);
+
 @import url(./blocks/searchform/__button/seachform__button.css);
 
 @import url(./blocks/cards/cards.css);

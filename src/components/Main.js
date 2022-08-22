@@ -1,13 +1,15 @@
 import React from "react";
 import Header from "./Header";
 import SearchForm from "./SearchForm";
+import Preloader from "./Preloader";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 
 export default function Main({
   search,
   handleSearchChange,
-  handleSearchBtnClick,
+  handleSearchSubmit,
+  isLoaded,
 }) {
   return (
     <div className="page">
@@ -15,9 +17,10 @@ export default function Main({
       <SearchForm
         search={search}
         handleChange={handleSearchChange}
-        onSubmit={handleSearchBtnClick}
+        onSubmit={handleSearchSubmit}
       ></SearchForm>
-      <Outlet />
+      {isLoaded ? <Outlet /> : <Preloader />}
+
       <Footer></Footer>
     </div>
   );

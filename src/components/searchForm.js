@@ -3,10 +3,10 @@ import searchImg from "../images/search.svg";
 
 export default function SearchForm({ search, handleChange, onSubmit }) {
   return (
-    <div className="searchform">
+    <form className="searchform" onSubmit={onSubmit}>
       <input
         className="searchform__input"
-        type="input"
+        type="text"
         id="search"
         value={search}
         onChange={handleChange}
@@ -17,10 +17,9 @@ export default function SearchForm({ search, handleChange, onSubmit }) {
         disabled={search === ""}
         type="submit"
         id="submit-search-btn"
-        onClick={onSubmit}
       >
         <img src={searchImg} alt={"search button"}></img>
       </button>
-    </div>
+    </form>
   );
 }
