@@ -6,6 +6,7 @@
   background-color: #eeeceb;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 @media screen and (min-width: 550px) {

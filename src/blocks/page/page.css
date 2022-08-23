@@ -5,7 +5,7 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   margin: 0 auto;
-  height: 1000px;
+  min-height: 100vh;
   text-rendering: optimizeLegibility;
   font-family: "Roboto", Arial !important;
   background-color: white;
@@ -13,5 +13,4 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: #cfcfcf;
-  overflow: auto;
 }

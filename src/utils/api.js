@@ -29,7 +29,10 @@ class Api {
   getDetails(nasa_id) {
     return fetch(`${this._baseUrl}/metadata/${nasa_id}`, {
       headers: this._headers,
-    }).then(this._handleServerResponse);
+    })
+      .then(this._handleServerResponse)
+      .then(({ location }) => fetch(location))
+      .then(this._handleServerResponse);
   }
 }
 

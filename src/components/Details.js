@@ -2,18 +2,19 @@ import React, { useEffect, useState } from "react";
 
 import { Link, useParams } from "react-router-dom";
 import api from "../utils/api";
+import Preloader from "./Preloader";
 
-export default function Details() {
+export default function Details({ isLoaded }) {
   const { nasa_id } = useParams();
   const [image, setImage] = useState([]);
-  const [assetDetails, setAssetDetails] = useState([]);
+  const [details, setDetails] = useState([]);
+  const [title, setTitle] = useState([]);
 
   useEffect(() => {
     api
       .getImage(nasa_id)
       .then(({ collection: { items: item } }) => {
         setImage(item[0]);
-        console.log(item[0]);
       })
       .catch((err) => console.error(err));
   }, []);
@@ -21,18 +22,24 @@ export default function Details() {
   useEffect(() => {
     api
       .getDetails(nasa_id)
-      .then(({ "AVAIL:Description": details }) => {
-        setAssetDetails(details);
+      .then(({ "AVAIL:Description": description, "AVAIL:Title": name }) => {
+        setDetails(description);
+        setTitle(name);
       })
+
       .catch((err) => console.error(err));
   }, []);
 
   return (
     <article className="details">
-      <img className="details__image" src={image.href} alt="" />
-      <h2 className="details__title">title: </h2>
+      <img
+        className="details__image"
+        src={isLoaded ? image.href : <Preloader />}
+        alt=""
+      />
+      <h2 className="details__title">{title}</h2>
       <p className="details__subtitle">NASA ID: {nasa_id}</p>
-      <p className="details__info">Description: {assetDetails}</p>
+      <p className="details__info">{details}</p>
       <nav>
         <Link to="/" className="details__info link">
           Home

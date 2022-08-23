@@ -32,11 +32,14 @@ function App() {
 
   function handleSearchSubmit(e) {
     e.preventDefault();
-    api.search(search).then(({ collection: { items: searchData } }) => {
-      setIsLoaded(true);
-      setCards(searchData);
-      console.log();
-    });
+    api
+      .search(search)
+      .then(({ collection: { items: searchData } }) => {
+        setIsLoaded(true);
+        setCards(searchData);
+      })
+      .catch((err) => console.error(err));
+    navigate("/");
   }
 
   function handleImageClick(card) {

@@ -12,7 +12,7 @@ export default function Main({
   isLoaded,
 }) {
   return (
-    <div className="page">
+    <div>
       <Header></Header>
       <SearchForm
         search={search}
