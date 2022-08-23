@@ -12,7 +12,6 @@ export default function Card({ card, handleImageClick }) {
         alt={card.data[0].title}
         onClick={onImageClick}
       />
-      <p>{card.data[0].description}</p>
     </div>
   );
 }

@@ -14,7 +14,7 @@ export default function Details({ isLoaded }) {
     api
       .getImage(nasa_id)
       .then(({ collection: { items: item } }) => {
-        setImage(item[0]);
+        setImage(item[1]);
       })
       .catch((err) => console.error(err));
   }, []);
