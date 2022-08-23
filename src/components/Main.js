@@ -3,6 +3,7 @@ import Header from "./Header";
 import SearchForm from "./SearchForm";
 import Preloader from "./Preloader";
 import { Outlet } from "react-router-dom";
+
 import Footer from "./Footer";
 
 export default function Main({
