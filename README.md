@@ -11,7 +11,3 @@ This is my final project for Practicum Software Engineer Bootcamp. It is a simpl
 ## API Docs
 
 - https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf
-
-## Hosted on Github Pages
-
--
