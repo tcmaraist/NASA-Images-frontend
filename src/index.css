@@ -9,21 +9,23 @@
 @import url(./blocks/main/main.css);
 
 @import url(./blocks/searchform/searchform.css);
-
 @import url(./blocks/searchform/__input/searchform__input.css);
-
 @import url(./blocks/searchform/__button/seachform__button.css);
 
 @import url(./blocks/cards/cards.css);
 
 @import url(./blocks/card/card.css);
 @import url(./blocks/card/__image/card__image.css);
+@import url(./blocks/card/__info/card__info.css);
+@import url(./blocks/card/__title/card__title.css);
+@import url(./blocks/card/__description/card__description.css);
 
 @import url(./blocks/details/details.css);
 @import url(./blocks/details/__image/details__info.css);
 @import url(./blocks/details/__info/details__info.css);
 @import url(./blocks/details/__title/details__title.css);
 @import url(./blocks/details/__subtitle/details__subtitle.css);
+
 @import url(./blocks/notfound/notfound.css);
 @import url(./blocks/notfound/__title/notfound__title.css);
 @import url(./blocks/notfound/__body/notfound__body.css);

@@ -12,8 +12,10 @@ export default function Card({ card, handleImageClick }) {
         alt={card.data[0].title}
         onClick={onImageClick}
       />
-      <div>{card.data[0].title}</div>
-      <div>{card.data[0].description}</div>
+      <div className="card__info">
+        <p className="card__title">{card.data[0].title}</p>
+        <p className="card__description">{card.data[0].description}</p>
+      </div>
     </div>
   );
 }

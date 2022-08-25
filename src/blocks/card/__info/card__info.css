@@ -1,0 +1,7 @@
+.card__info {
+  margin: 0 auto;
+  padding: 16px;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+}

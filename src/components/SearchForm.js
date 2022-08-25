@@ -1,5 +1,4 @@
 import React from "react";
-import searchImg from "../images/search.svg";
 
 export default function SearchForm({ search, handleChange, onSubmit }) {
   return (
@@ -19,7 +18,6 @@ export default function SearchForm({ search, handleChange, onSubmit }) {
         id="submit-search-btn"
       >
         Search
-        {/*<img src={searchImg} alt={"search button"}></img> */}
       </button>
     </form>
   );
