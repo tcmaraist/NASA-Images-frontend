@@ -83,16 +83,3 @@ function App() {
 }
 
 export default App;
-
-/* 
-on search button submit 'cards' should be set to search results.
-
-on card click user should be redirected to a page with information that is dynamically rendered with information form the card.
-
-fix preloader constant loading
-
-figure out how to get image data --> image data will come from metadata. look specifically at AVAIL
-
-
-
-*/

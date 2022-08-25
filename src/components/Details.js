@@ -35,7 +35,7 @@ export default function Details({ isLoaded }) {
       <img
         className="details__image"
         src={isLoaded ? image.href : <Preloader />}
-        alt=""
+        alt={title}
       />
       <h2 className="details__title">{title}</h2>
       <p className="details__subtitle">NASA ID: {nasa_id}</p>

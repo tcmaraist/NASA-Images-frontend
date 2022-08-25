@@ -1,15 +1,6 @@
 .details__info {
   padding: 0 20px;
   color: #fff;
-  overflow: ellipses;
-  color: #443f3c;
-}
 
-@media screen and (min-width: 550px) {
-  .details__info {
-  }
-}
-@media screen and (min-width: 920px) {
-  .details__info {
-  }
+  color: #443f3c;
 }

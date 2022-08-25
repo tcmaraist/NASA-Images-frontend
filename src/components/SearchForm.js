@@ -6,7 +6,7 @@ export default function SearchForm({ search, handleChange, onSubmit }) {
     <form className="searchform" onSubmit={onSubmit}>
       <input
         className="searchform__input"
-        type="text"
+        type="search"
         id="search"
         value={search}
         onChange={handleChange}
@@ -18,7 +18,8 @@ export default function SearchForm({ search, handleChange, onSubmit }) {
         type="submit"
         id="submit-search-btn"
       >
-        <img src={searchImg} alt={"search button"}></img>
+        Search
+        {/*<img src={searchImg} alt={"search button"}></img> */}
       </button>
     </form>
   );

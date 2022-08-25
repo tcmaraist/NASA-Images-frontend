@@ -1,11 +1,24 @@
 .searchform__button {
-  height: 78px;
-  width: 68px;
-  border: 4px solid #15418c;
-  background-color: #15418c;
+  width: 84px;
+  border-radius: 100px;
+  color: #ffffff;
+  background-color: #2f71e5;
+  border: #2f71e5;
   transition: background-color 0.4s ease-in-out;
 }
 
 .searchform__button:hover {
-  background-color: orangered;
+  background-color: #347eff;
+}
+
+@media screen and (min-width: 550px) {
+  .searchform__button {
+    width: 168px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .searchform__button {
+    max-width: 880px;
+  }
 }
