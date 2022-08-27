@@ -48,7 +48,7 @@ function App() {
     <div className="page">
       <Routes>
         <Route
-          path="/NASA-Images-frontend"
+          path="/"
           element={
             <Main
               search={search}
