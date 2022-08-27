@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-import Main from "./main/Main";
-import Cards from "./cards/Cards";
-import Details from "./details/Details";
-import image from "../images/card-default.jpeg";
+import Main from "../main/Main";
+import Cards from "../cards/Cards";
+import Details from "../details/Details";
+import image from "../../images/card-default.jpeg";
 import { Route, Routes, useNavigate } from "react-router-dom";
-import api from "../utils/api";
+import api from "../../utils/api";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);

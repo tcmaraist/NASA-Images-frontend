@@ -1,4 +1,6 @@
 .searchform__button {
+  margin: 0 auto;
+  padding: 0;
   width: 116px;
   border-radius: 100px;
   color: #ffffff;
