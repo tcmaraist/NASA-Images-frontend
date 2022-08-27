@@ -1,0 +1,8 @@
+.card__description {
+  margin: 0 auto;
+  padding: 16px 16px 0;
+  width: 220px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

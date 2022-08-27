@@ -1,0 +1,12 @@
+.details__image {
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 550px) {
+  .details {
+  }
+}
+@media screen and (min-width: 920px) {
+  .details__image {
+  }
+}

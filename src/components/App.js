@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-import NotFound from "./NotFound";
-
-import Main from "./Main";
-import Cards from "./Cards";
-import Details from "./Details";
+import Main from "./main/Main";
+import Cards from "./cards/Cards";
+import Details from "./details/Details";
 import image from "../images/card-default.jpeg";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import api from "../utils/api";
@@ -43,7 +41,6 @@ function App() {
   }
 
   function handleImageClick(card) {
-    // console.log(`${card.data[0].title}`);
     navigate(`/${card.data[0].nasa_id}`);
   }
 
@@ -76,7 +73,6 @@ function App() {
             }
           />
         </Route>
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

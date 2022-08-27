@@ -1,0 +1,18 @@
+.searchform__button {
+  width: 116px;
+  border-radius: 100px;
+  color: #ffffff;
+  background-color: #2f71e5;
+  border: #2f71e5;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.searchform__button:hover {
+  background-color: #347eff;
+}
+
+@media screen and (min-width: 550px) {
+  .searchform__button {
+    width: 168px;
+  }
+}
