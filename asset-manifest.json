@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.78fb66b2.chunk.css",
-  "main.js": "/static/js/main.3d3ca60f.chunk.js",
-  "main.js.map": "/static/js/main.3d3ca60f.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.3aa6013b.chunk.js": "/static/js/2.3aa6013b.chunk.js",
-  "static/js/2.3aa6013b.chunk.js.map": "/static/js/2.3aa6013b.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.2212ada49dfd6bbc472a54d5a3909dbd.js": "/precache-manifest.2212ada49dfd6bbc472a54d5a3909dbd.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.78fb66b2.chunk.css.map": "/static/css/main.78fb66b2.chunk.css.map",
-  "static/media/card-default.jpeg": "/static/media/card-default.5e7a07dd.jpeg",
-  "static/media/nasa-logo.svg": "/static/media/nasa-logo.72c1338e.svg"
+  "main.css": "/NASA-Images-frontend/static/css/main.78fb66b2.chunk.css",
+  "main.js": "/NASA-Images-frontend/static/js/main.3d3ca60f.chunk.js",
+  "main.js.map": "/NASA-Images-frontend/static/js/main.3d3ca60f.chunk.js.map",
+  "runtime~main.js": "/NASA-Images-frontend/static/js/runtime~main.e874bf2d.js",
+  "runtime~main.js.map": "/NASA-Images-frontend/static/js/runtime~main.e874bf2d.js.map",
+  "static/js/2.3aa6013b.chunk.js": "/NASA-Images-frontend/static/js/2.3aa6013b.chunk.js",
+  "static/js/2.3aa6013b.chunk.js.map": "/NASA-Images-frontend/static/js/2.3aa6013b.chunk.js.map",
+  "index.html": "/NASA-Images-frontend/index.html",
+  "precache-manifest.531c0afa473bdd2e672072ebda8473e3.js": "/NASA-Images-frontend/precache-manifest.531c0afa473bdd2e672072ebda8473e3.js",
+  "service-worker.js": "/NASA-Images-frontend/service-worker.js",
+  "static/css/main.78fb66b2.chunk.css.map": "/NASA-Images-frontend/static/css/main.78fb66b2.chunk.css.map",
+  "static/media/card-default.jpeg": "/NASA-Images-frontend/static/media/card-default.5e7a07dd.jpeg",
+  "static/media/nasa-logo.svg": "/NASA-Images-frontend/static/media/nasa-logo.72c1338e.svg"
 }
