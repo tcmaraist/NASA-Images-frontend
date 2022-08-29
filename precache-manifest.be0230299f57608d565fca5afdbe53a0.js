@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "82b400010d51a2476a1e",
-    "url": "/NASA-Images-frontend/static/css/main.3e7c8c91.chunk.css"
+    "revision": "9c393a573b90cad3a729",
+    "url": "/NASA-Images-frontend/static/css/main.c7f26bd5.chunk.css"
   },
   {
-    "revision": "82b400010d51a2476a1e",
+    "revision": "9c393a573b90cad3a729",
     "url": "/NASA-Images-frontend/static/js/main.82ba435a.chunk.js"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/NASA-Images-frontend/static/media/card-default.5e7a07dd.jpeg"
   },
   {
-    "revision": "d5fc9a733970e5f3a82dc4d92384e7d2",
+    "revision": "0af4b2cc1160716e28b4c1c6796e62e3",
     "url": "/NASA-Images-frontend/index.html"
   }
 ];
