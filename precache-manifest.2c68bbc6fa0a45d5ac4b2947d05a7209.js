@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "d35315045bf4369c5b02",
-    "url": "/NASA-Images-frontend/static/css/main.053ddc10.chunk.css"
+    "revision": "268a84633d7cac69ae19",
+    "url": "/NASA-Images-frontend/static/css/main.329ee07c.chunk.css"
   },
   {
-    "revision": "d35315045bf4369c5b02",
-    "url": "/NASA-Images-frontend/static/js/main.b8b8baf4.chunk.js"
+    "revision": "268a84633d7cac69ae19",
+    "url": "/NASA-Images-frontend/static/js/main.e426ead7.chunk.js"
   },
   {
     "revision": "4bdd1cce19ecc54190ba",
     "url": "/NASA-Images-frontend/static/js/runtime~main.e874bf2d.js"
   },
   {
-    "revision": "5ecf988eeacf85ab3299",
-    "url": "/NASA-Images-frontend/static/js/2.9b8be0dd.chunk.js"
+    "revision": "d71d20e45fa9807f0037",
+    "url": "/NASA-Images-frontend/static/js/2.da1721bb.chunk.js"
   },
   {
     "revision": "72c1338e0934456dbac619658327661e",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/NASA-Images-frontend/static/media/card-default.5e7a07dd.jpeg"
   },
   {
-    "revision": "8e6628859d68e91ee558474e02a404bb",
+    "revision": "9e29a73eed52d16c00bc5eda12c99fda",
     "url": "/NASA-Images-frontend/index.html"
   }
 ];
