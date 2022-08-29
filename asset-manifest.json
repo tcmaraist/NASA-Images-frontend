@@ -1,5 +1,5 @@
 {
-  "main.css": "/NASA-Images-frontend/static/css/main.a477c210.chunk.css",
+  "main.css": "/NASA-Images-frontend/static/css/main.053ddc10.chunk.css",
   "main.js": "/NASA-Images-frontend/static/js/main.b8b8baf4.chunk.js",
   "main.js.map": "/NASA-Images-frontend/static/js/main.b8b8baf4.chunk.js.map",
   "runtime~main.js": "/NASA-Images-frontend/static/js/runtime~main.e874bf2d.js",
@@ -7,9 +7,9 @@
   "static/js/2.9b8be0dd.chunk.js": "/NASA-Images-frontend/static/js/2.9b8be0dd.chunk.js",
   "static/js/2.9b8be0dd.chunk.js.map": "/NASA-Images-frontend/static/js/2.9b8be0dd.chunk.js.map",
   "index.html": "/NASA-Images-frontend/index.html",
-  "precache-manifest.1892bb860c517870a125ef9b1797ccdb.js": "/NASA-Images-frontend/precache-manifest.1892bb860c517870a125ef9b1797ccdb.js",
+  "precache-manifest.cc67cc079d0732245374d5b63dd6b2d7.js": "/NASA-Images-frontend/precache-manifest.cc67cc079d0732245374d5b63dd6b2d7.js",
   "service-worker.js": "/NASA-Images-frontend/service-worker.js",
-  "static/css/main.a477c210.chunk.css.map": "/NASA-Images-frontend/static/css/main.a477c210.chunk.css.map",
+  "static/css/main.053ddc10.chunk.css.map": "/NASA-Images-frontend/static/css/main.053ddc10.chunk.css.map",
   "static/media/card-default.jpeg": "/NASA-Images-frontend/static/media/card-default.5e7a07dd.jpeg",
   "static/media/nasa-logo.svg": "/NASA-Images-frontend/static/media/nasa-logo.72c1338e.svg"
 }
