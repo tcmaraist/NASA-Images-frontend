@@ -1,12 +1,4 @@
 .details__image {
   border-radius: 16px 16px 0 0;
-}
-
-@media screen and (min-width: 550px) {
-  .details {
-  }
-}
-@media screen and (min-width: 920px) {
-  .details__image {
-  }
+  max-height: 50vh;
 }

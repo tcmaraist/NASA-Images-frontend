@@ -2,18 +2,21 @@ import React, { useEffect, useState } from "react";
 
 import { Link, useParams } from "react-router-dom";
 import api from "../../utils/api";
+import Preloader from "../preloader/Preloader";
 
-export default function Details() {
+export default function Details({ isLoaded }) {
   const { nasa_id } = useParams();
   const [image, setImage] = useState([]);
   const [details, setDetails] = useState([]);
   const [title, setTitle] = useState([]);
+  const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   useEffect(() => {
     api
       .getImage(nasa_id)
       .then(({ collection: { items: item } }) => {
         setImage(item[1]);
+        setImageIsLoaded(true);
       })
       .catch((err) => console.error(err));
   }, []);
@@ -31,7 +34,12 @@ export default function Details() {
 
   return (
     <article className="details">
-      <img className="details__image" src={image.href} alt={title} />
+      {imageIsLoaded ? (
+        <img className="details__image" src={image.href} alt={title} />
+      ) : (
+        <Preloader className="details__image" />
+      )}
+
       <h2 className="details__title">{title}</h2>
       <p className="details__subtitle">NASA ID: {nasa_id}</p>
       <p className="details__info">{details}</p>

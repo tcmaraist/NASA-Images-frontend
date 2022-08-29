@@ -8,8 +8,14 @@ class Api {
     return res.ok ? res.json() : Promise.reject(`Error: ${res.status}`);
   }
 
-  getInitialCards() {
+  getMostPopular() {
     return fetch(`${this._baseUrl}/asset/?orderby=popular`, {
+      headers: this._headers,
+    }).then(this._handleServerResponse);
+  }
+
+  getMostRecent() {
+    return fetch(`${this._baseUrl}/asset/?orderby=recent`, {
       headers: this._headers,
     }).then(this._handleServerResponse);
   }

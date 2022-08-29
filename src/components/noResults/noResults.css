@@ -1,0 +1,21 @@
+.noResults {
+  margin: 0 auto;
+  padding: 36px 19px 0;
+  max-width: 320px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+@media screen and (min-width: 550px) {
+  .noResults {
+    padding: 46.25px 0 0;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .noResults {
+    max-width: 880px;
+  }
+}
