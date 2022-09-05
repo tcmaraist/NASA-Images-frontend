@@ -1,0 +1,12 @@
+.navigation__button {
+  padding: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #f5f6f7;
+  border: none;
+}
+
+.navigation__button:hover {
+  opacity: 0.6;
+}

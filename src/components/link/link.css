@@ -1,0 +1,9 @@
+.link {
+  color: orangered;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link:hover {
+  opacity: 0.6;
+}

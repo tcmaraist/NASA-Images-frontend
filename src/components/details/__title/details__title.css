@@ -1,0 +1,14 @@
+.details__title {
+  padding: 0 20px;
+
+  color: #443f3c;
+}
+
+@media screen and (min-width: 550px) {
+  .details {
+  }
+}
+@media screen and (min-width: 920px) {
+  .details {
+  }
+}

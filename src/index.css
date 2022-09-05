@@ -1,0 +1,39 @@
+@import url(./vendors/normalize.css);
+@import url(./components/page/page.css);
+
+@import url(./components/preloader/preloader.css);
+@import url(./components/preloader/__container/preloader__container.css);
+@import url(./components/header/header.css);
+@import url(./components/header/__image/header__image.css);
+@import url(./components/header/__title/header__title.css);
+
+@import url(./components/searchform/searchform.css);
+@import url(./components/searchform/__form/searchform__form.css);
+@import url(./components/searchform/__input/searchform__input.css);
+@import url(./components/searchform/__button/seachform__button.css);
+
+@import url(./components/navigation/navigation.css);
+@import url(./components/navigation/__button/navigation__button.css);
+@import url(./components/navigation/__button/_active/navigation__button_active.css);
+
+@import url(./components/cards/cards.css);
+@import url(./components/cards/__button/cards__button.css);
+
+@import url(./components/noResults/noResults.css);
+
+@import url(./components/card/card.css);
+@import url(./components/card/__image/card__image.css);
+@import url(./components/card/__info/card__info.css);
+@import url(./components/card/__title/card__title.css);
+@import url(./components/card/__description/card__description.css);
+
+@import url(./components/details/details.css);
+@import url(./components/details/__image/details__info.css);
+@import url(./components/details/__info/details__info.css);
+@import url(./components/details/__title/details__title.css);
+@import url(./components/details/__subtitle/details__subtitle.css);
+
+@import url(./components/link/link.css);
+
+@import url(./components/footer/footer.css);
+@import url(./components/footer/__copyright/footer__copyright.css);

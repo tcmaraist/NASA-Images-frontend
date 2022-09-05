@@ -1,0 +1,7 @@
+.details__image {
+  border-radius: 16px 16px 0 0;
+  display: block;
+  object-fit: scale-down;
+  width: 100%;
+  max-height: 60vh;
+}

@@ -1,0 +1,23 @@
+.details {
+  margin: 60px auto;
+  padding-bottom: 20px;
+
+  border-radius: 16px;
+  max-width: 320px;
+  background-color: #eeeceb;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+@media screen and (min-width: 550px) {
+  .details {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .details {
+    max-width: 880px;
+  }
+}

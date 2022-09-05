@@ -1,0 +1,18 @@
+.searchform {
+  margin: 36px auto 0;
+  padding: 0 19px;
+  max-width: 320px;
+}
+
+@media screen and (min-width: 550px) {
+  .searchform {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .searchform {
+    margin: 60px auto 0;
+    max-width: 880px;
+  }
+}
