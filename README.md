@@ -6,7 +6,7 @@ This is my final project for Practicum Software Engineer Bootcamp. It is a simpl
 
 - React
 - CSS
-- BEM Methodology for all CSS
+- REST API
 
 ## API Docs
 
