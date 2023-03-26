@@ -45,7 +45,7 @@ class Api {
 const api = new Api({
   baseUrl: 'https://images-api.nasa.gov',
   headers: {
-    Authorization: process.env.NASA_API_Key,
+    Authorization: `${process.env.NASA_API_Key}`,
     'Content-Type': 'application/json',
   },
 });
